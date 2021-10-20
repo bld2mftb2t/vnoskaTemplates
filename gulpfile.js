@@ -51,6 +51,13 @@ function fontsd() {
   .pipe(dest(fontDest))
 }
 
+function imgd() {
+  var imgSrc = 'src/img/**';
+  var imgDest = 'dist/dev/img';
+  return src(imgSrc)
+  .pipe(dest(imgDest))
+}
+
 function jsd() {
   var jsSrc = 'src/js/**';
   var jsDest = 'dist/dev/js';
@@ -75,5 +82,5 @@ function serve() {
   watch('src/js/**.js', series(jsd)).on('change', sync.reload)
 }
 
-exports.serve = series(clear, scssd, htmld, fontsd, jsd, serve)
+exports.serve = series(clear, scssd, htmld, fontsd, imgd, jsd, serve)
 exports.prod = series(clear, scssp, htmlp)

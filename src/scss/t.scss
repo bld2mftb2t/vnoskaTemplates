@@ -21,9 +21,21 @@
   padding: 20px;
   color: red;
 }
+.secjopa_desktop svg:hover path {
+  fill: #00ff00;
+}
+.secjopa_desktop svg path {
+  fill: #0000ff;
+}
 .secjopa_desktop {
   position: relative;
   top: 100px;
   padding: 20px;
   color: green;
+  text-align: justify;
+  line-height: 2rem;
 }
+
+/*.secjopa_desktop svg polygon, svg path, svg circle {
+        fill: #d6d9e0;
+}*/

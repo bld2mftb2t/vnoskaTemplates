@@ -438,6 +438,9 @@ body {
   border-radius: 23px;
   overflow: hidden;
 }
+.main-block__separator {
+  height: 5em;
+}
 .page__section1 {
   background-color: #f6f7f7;
   justify-content: flex-start;
@@ -543,6 +546,100 @@ body {
   color: rgba(3, 13, 37, 0.08);
   margin: 0px -20px 0px 0px;
 }
+.page__section-mobapp__gradient {
+  position: sticky;
+  background: linear-gradient(28deg,rgba(17, 20, 20, 0.1) 0%,rgba(77, 54, 196, 0.05) 70%);
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.page__section-mobapp {
+  position: relative;
+  margin-bottom: -5em;
+}
+.page__section-mobapp-image {
+  margin-top: -5em;
+  perspective: 500px;
+  float: right;
+}
+.page__section-mobapp__content {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  line-height: 32px;
+  position: relative;
+  padding: 20px 0px 40px;
+  width: 50%;
+  flex-grow: 1;
+  margin: 50px 70px;
+}
+.page__section-mobapp__content-title {
+  font-family: $titleFont, sans-serif;
+  padding: 0px 0.9rem;
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+  /*border: 1px solid;*/
+  height: 3rem;
+}
+.page__section-mobapp-content__col {
+  padding: 0px 0.9rem;
+}
+.mobapp-switcher__item {
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0px;
+  cursor: pointer;
+  padding: 0px;
+}
+.mobapp-switcher__img {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: center;
+  align-content: center;
+  margin: 0px 0.9rem 0px 0px;
+}
+.mobapp-switcher__text {
+  display: flex;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(3, 13, 37, 0.65);
+  font-weight: bold;
+  width: 100%;
+  align-items: center;
+}
+.mobapp-switcher__stores {
+  display: flex;
+  flex-direction: row;
+}
+.mobapp-switcher__stores img {
+  width: 100%;
+  margin: 20px -6px;
+}
+.--active svg path {
+fill: #452AD6;
+}
+.mobapp-switcher__video {
+  position: absolute;
+  z-index: -1;
+  top: -11%;
+  left: 6.45%;
+  transform: scale(0.41, 0.495) skew(8deg, -2.5deg);
+  transform-origin: top left;
+  border-radius: 6%;
+  background-color: #fff;
+}
+.mobapp-switcher__video video {
+  position: relative;
+  border-radius: 5%;
+}
+video {
+  object-fit: contain;
+}
+
 //----------------------------------------1700------------------------------------
 @media (max-width: 1700px) {
   .main-block__image img {

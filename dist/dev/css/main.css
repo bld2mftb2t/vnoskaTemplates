@@ -806,7 +806,7 @@ body {
   display: flex;
   font-size: 16px;
   line-height: 22px;
-  color: rgba(3, 13, 37, 0.65);
+  color: #c4c4c4;
   font-weight: bold;
   width: 100%;
   -webkit-box-align: center;
@@ -829,8 +829,14 @@ body {
   margin: 20px -6px;
 }
 
-.--active svg path {
-  fill: #452AD6;
+.-is-active {
+  -webkit-filter: invert(36%) sepia(99%) saturate(6376%) hue-rotate(247deg) brightness(79%) contrast(93%);
+  filter: invert(36%) sepia(99%) saturate(6376%) hue-rotate(247deg) brightness(79%) contrast(93%);
+}
+
+.mobapp-switcher__img:not(.-is-active) {
+  -webkit-filter: invert(75%) sepia(42%) saturate(27%) hue-rotate(55deg) brightness(102%) contrast(82%);
+  filter: invert(75%) sepia(42%) saturate(27%) hue-rotate(55deg) brightness(102%) contrast(82%);
 }
 
 .mobapp-switcher__video {
@@ -1085,6 +1091,16 @@ video {
   color: green;
   text-align: justify;
   line-height: 2rem;
+}
+
+.purple {
+  -webkit-filter: invert(21%) sepia(97%) saturate(2543%) hue-rotate(244deg) brightness(80%) contrast(113%);
+  filter: invert(21%) sepia(97%) saturate(2543%) hue-rotate(244deg) brightness(80%) contrast(113%);
+}
+
+.grey {
+  -webkit-filter: invert(75%) sepia(42%) saturate(27%) hue-rotate(55deg) brightness(102%) contrast(82%);
+  filter: invert(75%) sepia(42%) saturate(27%) hue-rotate(55deg) brightness(102%) contrast(82%);
 }
 
 /*.secjopa_desktop svg polygon, svg path, svg circle {

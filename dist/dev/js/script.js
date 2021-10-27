@@ -47,3 +47,37 @@ try {
 catch (e) {
     //console.error(e)
 }
+
+let icons = document.querySelectorAll('.mobapp-switcher__item')
+if (icons.length) {
+  for (let i = 0; i < icons.length; i++){
+    const icon = icons[i]
+    icon.addEventListener('click', function (e) {
+      icon.classList.toggle('-is-active')
+    })
+  }
+}
+
+function iconSwitcher(_timeArray) {
+  //получить все элементы для перебора
+  let elements = document.querySelectorAll('.mobapp-switcher__item')
+  //обойти поэлементно массив elements, добавить на _timeArray[i] задержку до перехода к следующему элементу
+  if (elements.length > 0) {
+      for (let i = 0; i < _timeArray.length; i++) {
+        setTimeout(() => {
+          console.log(elements[i])
+        }, _timeArray[i] * 1000)
+      }
+  }
+}
+
+function rekurse(_countOfElements) {
+  if (_countOfElements === 0) {
+    return 0
+  }
+  else {
+    return _countOfElements + rekurse(_countOfElements-1)
+  } 
+}
+
+console.log(rekurse(5))

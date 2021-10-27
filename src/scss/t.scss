@@ -36,6 +36,13 @@
   line-height: 2rem;
 }
 
+.purple {
+  filter: invert(21%) sepia(97%) saturate(2543%) hue-rotate(244deg) brightness(80%) contrast(113%);
+}
+.grey {
+  filter: invert(75%) sepia(42%) saturate(27%) hue-rotate(55deg) brightness(102%) contrast(82%);
+}
+
 /*.secjopa_desktop svg polygon, svg path, svg circle {
         fill: #d6d9e0;
 }*/
